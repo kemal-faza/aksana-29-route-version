@@ -83,7 +83,7 @@ export function App() {
 function Home() {
 	const imageSizesAttr = '100vw';
 	const heroSrcSet =
-		'/img/homepage/home-640.webp 640w, /img/homepage/home-960.webp 960w, /img/homepage/home-1080.webp 1080w, /img/homepage/home-1920.webp 1920w';
+		'/img/homepage/home-320.webp 320w, /img/homepage/home-640.webp 640w, /img/homepage/home-960.webp 960w, /img/homepage/home-1080.webp 1080w';
 	return (
 		<section
 			className="relative w-full mt-14 md:mt-0"
@@ -92,7 +92,7 @@ function Home() {
 				src="/img/homepage/home.webp"
 				srcSet={heroSrcSet}
 				sizes={imageSizesAttr}
-				fetchPriority="high"
+				fetchpriority="high"
 				decoding="async"
 				width={1920}
 				height={1080}
