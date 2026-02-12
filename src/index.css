@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hamburger.active > span:first-child {
+	@apply -rotate-45;
+}
+
+#hamburger.active > span:nth-child(2) {
+	@apply scale-0;
+}
+
+#hamburger.active > span:last-child {
+	@apply rotate-45;
+}
+
+#nav-menu {
+	@apply -translate-y-[700px] lg:translate-y-0;
+}
+
+#nav-menu.active {
+	@apply translate-y-0 shadow-2xl;
+}
+
+.dropdown-navbar {
+	@apply h-0 opacity-0 -translate-x-96 lg:translate-x-0 lg:invisible lg:block lg:scale-0;
+}
+
+.dropdown-navbar.active {
+	@apply mx-4 my-1 h-full lg:h-auto opacity-100 translate-x-0 lg:visible scale-100;
+}
+
+.navbar-fixed {
+	@apply lg:bg-primary/80 lg:shadow-lg bg-secondary/70;
+}
+
+nav a.active {
+	@apply bg-primary text-secondary hover:bg-primary/80 lg:bg-secondary lg:text-primary lg:hover:bg-secondary/80;
+}
+
+img {
+	max-inline-size: 100%;
+}
+
+.cv-auto {
+	content-visibility: auto;
+	contain-intrinsic-size: 1px 1200px;
+}
